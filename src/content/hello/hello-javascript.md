@@ -2,8 +2,9 @@
 title: "Hello Javascript!"
 pubDate: 2024-03-15
 description: "Hello Markdown world!"
-image:
+image: "https://st4.depositphotos.com/36554060/38214/i/450/depositphotos_382145842-stock-photo-milky-way-night-sky-star.jpg"
 tags: ["Astro", "Javascript"]
+layout: "../../layouts/Post.astro"
 ---
 
 Proident ad minim mollit eiusmod voluptate veniam tempor proident eiusmod aliqua officia quis. Dolore do dolore ut et minim deserunt proident. Laboris consectetur duis laborum et.

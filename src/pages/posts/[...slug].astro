@@ -15,8 +15,12 @@ export const getStaticPaths = (async () => {
     );
 }) satisfies GetStaticPaths;
 
+import Base from "../../layouts/Base.astro";
+
 const post = Astro.props;
 const { Content } = await post.render();
 ---
 
-<Content />
+<Base title={post.title}>
+    <Content />
+</Base>
