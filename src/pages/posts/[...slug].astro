@@ -5,7 +5,7 @@ import { getCollection } from 'astro:content';
 export const getStaticPaths = (async () => {
     const posts = await getCollection('hello');
 
-    return posts.map((post: any) => ({
+    return posts.map((post) => ({
         params: {
             slug: post.slug,
         },
@@ -14,11 +14,13 @@ export const getStaticPaths = (async () => {
 }) satisfies GetStaticPaths;
 
 import Base from '../../layouts/Base.astro';
+import Header from '../../components/Header';
 
 const post = Astro.props;
 const { Content } = await post.render();
 ---
 
-<Base title={post.title}>
+<Base title={post.data?.title}>
+    <Header title={post.data?.title} />
     <Content />
 </Base>
