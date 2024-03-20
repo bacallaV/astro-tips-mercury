@@ -15,6 +15,7 @@ export const getStaticPaths = (async () => {
 
 import Base from '../../layouts/Base.astro';
 import Header from '../../components/Header';
+import Social from '../../components/Social.svelte';
 import Footer from '../../components/Footer.vue';
 
 const post = Astro.props;
@@ -24,5 +25,7 @@ const { Content } = await post.render();
 <Base title={post.data?.title}>
     <Header title={post.data?.title} />
     <Content />
-    <Footer />
+    <Footer>
+        <Social />
+    </Footer>
 </Base>
