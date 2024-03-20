@@ -14,6 +14,7 @@
         "@astrojs/check": "^0.5.6",
         "@astrojs/mdx": "^2.2.0",
         "@astrojs/react": "^3.1.0",
+        "@astrojs/svelte": "^5.2.0",
         "@astrojs/tailwind": "^5.1.0",
         "@astrojs/vue": "^4.0.9",
         "@types/react": "^18.2.67",
@@ -21,8 +22,9 @@
         "astro": "^4.4.12",
         "react": "^18.2.0",
         "react-dom": "^18.2.0",
+        "svelte": "^4.2.12",
         "tailwindcss": "^3.4.1",
-        "typescript": "^5.3.3",
+        "typescript": "^5.4.2",
         "vue": "^3.4.21"
     },
     "devDependencies": {
