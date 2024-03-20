@@ -1,10 +1,10 @@
-import React from "react";
+import React from 'react';
 
 interface Props {
     title: string;
 }
 
-const Header = ({title}: Props) => {
+const Header = ({ title }: Props) => {
     return (
         <div className="mx-auto max-w-screen-xl p-4 py-8">
             <h1 className="mb-4">
@@ -14,6 +14,6 @@ const Header = ({title}: Props) => {
             </h1>
         </div>
     );
-}
+};
 
 export default Header;
